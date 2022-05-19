@@ -3,7 +3,7 @@
 
   outputs = { self, nixpkgs }: {
     templates = {
-      go-web-server = {
+      django = {
         path = ./django;
         description = "A basic Django setup";
       };
