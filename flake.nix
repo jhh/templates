@@ -10,6 +10,7 @@
           # Getting started
           - Run `poetry lock --no-update`
           - Run `django-admin startproject <NAME> . --template https://github.com/jhh/django-startproject/archive/main.zip`
+          - Run `nix build .#venv -o .venv`
         '';
 
       };
