@@ -4,11 +4,11 @@
   outputs = { self, nixpkgs }: {
     templates = {
       django = {
-        path = ./django-project;
-        description = "A basic Django setup";
+        path = ./django;
+        description = "A simple Django project";
       };
       html = {
-        path = ./html-design;
+        path = ./html;
         description = "HTML design setup";
       };
     };
