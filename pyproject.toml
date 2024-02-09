@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Jeff Hutchison <jeff@j3ff.io>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.group.main.dependencies]
+python = "^3.11"
+Django = {extras = ["argon2"], version = "^5.0"}
+psycopg  = {extras = ["binary", "pool"], version = "^3.1"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.0.0"
+rich = "^13.0.0"
+django-debug-toolbar = "^4.2"
+ipython = "^8.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 99
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
