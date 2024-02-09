@@ -1,7 +1,7 @@
 {
   description = "Nix Flake Templates";
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self }: {
     templates = {
       django = {
         path = ./django;
