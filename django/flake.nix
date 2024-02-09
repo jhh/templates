@@ -31,8 +31,7 @@
         };
 
         devShells.default = pkgs.mkShell {
-          inputsFrom = [ self.packages.${system}.devEnv ];
-          packages = with pkgs; [ poetry ];
+          packages = [ self.packages.${system}.devEnv pkgs.poetry ];
         };
       });
 }
